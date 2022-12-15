@@ -9,11 +9,17 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ListView lv;
     ArrayList<DiaDiem> diaDiemArrayList= new ArrayList<DiaDiem>();
+   // GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,4 +56,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    /* Tạo Marker
+
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        // Add a marker in LongXuyen and move the camera
+        LatLng LX = new LatLng(10.377534112776233, 105.41731301614516);
+        mMap.addMarker(new MarkerOptions().position(LX).title("Marker in Long Xuyên"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(LX));
+    }*/
 }
