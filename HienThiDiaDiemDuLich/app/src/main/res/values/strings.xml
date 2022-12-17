@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">HienThiDiaDiemDuLich</string>
     <string name="api_key">AIzaSyCiLAtCFo_6YIQsnzy1CAZZ6-74lEltDIE</string>
-    <string name="hello_world">Hello World</string>
+    <string name="ten_tinh">Tỉnh An Giang</string>
+    <string name="food1">Đặc Sản Mùa Nước Nổi</string>
+    <string name="food2">Cơm Tấm Long Xuyên</string>
+    <string name="food3">Gà Đốt Ô Thum</string>
+    <string name="travel1">Miếu Bà Chúa Xứ Núi Sam</string>
+    <string name="travel2">Rừng Tràm Trà Sư</string>
+    <string name="travel3">Khu Du Lịch Núi Cấm</string>
+
 </resources>

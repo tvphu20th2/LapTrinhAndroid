@@ -12,19 +12,58 @@
         android:layout_height="51dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="4dp"
-        android:text="@string/hello_world" />
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:text="@string/ten_tinh"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imgProvince"
+        android:layout_width="360dp"
+        android:layout_height="245dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="72dp"
+        app:srcCompat="@drawable/Bông_Lúa" />
 
-    <WebView
-        android:id="@+id/webNoidung"
-        android:layout_width="356dp"
-        android:layout_height="637dp"
+    <TextView
+        android:id="@+id/txtMoTa"
+        android:layout_width="389dp"
+        android:layout_height="153dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="93dp" />
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="235dp"
+        android:text="      An Giang là một tỉnh thuộc vùng đồng bằng sông Cửu Long, Việt Nam.
+An Giang là tỉnh thuộc Vùng kinh tế trọng điểm vùng đồng bằng sông Cửu Long. Là tỉnh có dân số đông nhất vùng đồng bằng sông Cửu Long và là tỉnh đứng thứ 8 cả nước về dân số. Một phần của An Giang nằm trong vùng tứ giác Long Xuyên.
+An Giang sở hữu diện tích khá lớn ở miền Tây Nam Bộ, trong đó có nhiều cảnh quan thiên nhiên tươi đẹp, có sông nước mênh mông, có núi non kỳ vĩ, có rừng tràm, có đồng ruộng bát ngát,…      " />
+
+    <Button
+        android:id="@+id/btnFood"
+        android:layout_width="313dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="136dp"
+        android:text="Ẩm Thực" />
+
+    <Button
+        android:id="@+id/btnTravel"
+        android:layout_width="313dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="45dp"
+        android:text="Du Lịch" />
+
 
 </RelativeLayout>
