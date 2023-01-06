@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailDiaDiemActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDiaDiem"
+        android:layout_width="175dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@drawable/dai_nam" />
+
+    <TextView
+        android:id="@+id/textViewTenDiaDiem"
+        android:layout_width="135dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="90dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#F44336"
+        android:text="ĐẠI NAM" />
+
+    <TextView
+        android:id="@+id/textViewMoTa"
+        android:layout_width="227dp"
+        android:layout_height="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:textStyle="bold"
+        android:textColor="#191901"
+        android:layout_marginEnd="0dp"
+        android:text="Khu du lịch Đại Nam - nơi vọng ngưỡng tâm linh và tôn vinh tinh hoa dân tộc trải dài qua 4.000 năm văn hiến của  Việt Nam." />
+</RelativeLayout>
