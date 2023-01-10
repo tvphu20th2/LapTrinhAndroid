@@ -13,13 +13,6 @@
         android:theme="@style/Theme.MyTravel"
         tools:targetApi="31">
         <activity
-            android:name=".DetailDiaDiemActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".DSDiaDiemActivity"
             android:exported="false">
             <meta-data
@@ -27,15 +20,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".DangKyActivity"
+            android:name=".DangNhapActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-
-            android:name=".DangNhapActivity"
+            android:name=".DangkyActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

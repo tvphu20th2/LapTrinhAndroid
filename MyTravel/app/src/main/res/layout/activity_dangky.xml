@@ -5,22 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/dangnhap"
-    tools:context=".DangKyActivity">
-
+    tools:context=".DangkyActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="365dp"
         android:layout_height="51dp"
-        android:textColor="#FBFBF8"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:gravity="center"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="22dp"
         android:layout_marginTop="32dp"
-        android:text="ĐĂNG KÝ" />
+        android:gravity="center"
+        android:text="ĐĂNG KÝ"
+        android:textColor="#FBFBF8"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editUser_dangky"
@@ -31,10 +30,10 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="140dp"
         android:ems="10"
-        android:textColor="#FBFBF8"
-        android:textStyle="bold"
         android:inputType="textPersonName"
-        android:text="Username" />
+        android:hint="Username"
+        android:textColor="#FBFBF8"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editPass_dangky"
@@ -45,10 +44,10 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="230dp"
         android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
         android:textColor="#FBFBF8"
-        android:textStyle="bold"
-        android:inputType="textPersonName"
-        android:text="Password" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editConfimPassword"
@@ -60,8 +59,8 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="319dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Confim Password"
+        android:inputType="textPassword"
+        android:hint="Confim Password"
         android:textColor="#FBFBF8"
         android:textStyle="bold" />
 
@@ -75,8 +74,8 @@
         android:layout_marginStart="40dp"
         android:layout_marginBottom="241dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
         android:textColor="#FBFBF8"
         android:textStyle="bold" />
 

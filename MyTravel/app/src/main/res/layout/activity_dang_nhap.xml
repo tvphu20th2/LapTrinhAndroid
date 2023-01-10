@@ -34,7 +34,7 @@
         android:textColor="#FFEB3B"
         android:textStyle="bold"
         android:inputType="textPersonName"
-        android:text="Username" />
+        android:hint="Username" />
 
     <EditText
         android:id="@+id/editPass_dangnhap"
@@ -48,8 +48,8 @@
         android:textColor="#FFEB3B"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:inputType="textPersonName"
-        android:text="Password" />
+        android:inputType="textPassword"
+        android:hint="Password" />
 
     <Button
         android:id="@+id/buttonDangNhap"
@@ -79,5 +79,4 @@
         android:layout_marginStart="57dp"
         android:layout_marginBottom="215dp"
         android:text="Quên Mật Khẩu" />
-
 </RelativeLayout>

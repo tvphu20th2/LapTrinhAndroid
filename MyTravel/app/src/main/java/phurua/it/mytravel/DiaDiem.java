@@ -1,15 +1,14 @@
 package phurua.it.mytravel;
 
-import java.io.Serializable;
-
-public class DiaDiem implements Serializable  {
+public class DiaDiem {
     public DiaDiem(String tendiadiem, String mota, int hinhanh) {
         this.tendiadiem = tendiadiem;
         this.mota = mota;
         this.hinhanh = hinhanh;
     }
+
     String tendiadiem, mota;
-   public int hinhanh;
+    int hinhanh;
 
     public String getTendiadiem() {
         return tendiadiem;

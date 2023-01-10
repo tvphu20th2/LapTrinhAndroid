@@ -7,22 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class DangKyActivity extends AppCompatActivity {
+public class DangkyActivity extends AppCompatActivity {
 
+    EditText username,password,confimpass,email;
+    Button dangky;
+    DataBaseHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dang_ky);
+        setContentView(R.layout.activity_dangky);
 
-        EditText username = findViewById(R.id.editUser_dangky);
-        EditText password = findViewById(R.id.editPass_dangky);
-        EditText confimpass = findViewById(R.id.editConfimPassword);
-        EditText email = findViewById(R.id.editEmail);
-        Button dangky = findViewById(R.id.buttonDangKy);
-        DataBaseHelper DB = new  DataBaseHelper(this);
+        username = findViewById(R.id.editUser_dangky);
+        password = findViewById(R.id.editPass_dangky);
+        confimpass = findViewById(R.id.editConfimPassword);
+        email = findViewById(R.id.editEmail);
+        dangky = findViewById(R.id.buttonDangKy);
+        DB = new  DataBaseHelper(this);
 
         dangky.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,11 +39,11 @@ public class DangKyActivity extends AppCompatActivity {
                         if(checkuser==false){
                             Boolean insert = DB.insertData(username,password);
                             if(insert==true){
-                                Toast.makeText(getApplicationContext(),"Đăng ký thành công",Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(),DangNhapActivity.class);
+                                Toast.makeText(DangkyActivity.this,"Đăng ký thành công",Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(DangkyActivity.this,DangNhapActivity.class);
                                 startActivity(intent);
                             }else{
-                                Toast.makeText(getApplicationContext(),"Đăng ký thất bại",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DangkyActivity.this,"Đăng ký thất bại",Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
@@ -50,4 +52,4 @@ public class DangKyActivity extends AppCompatActivity {
 
         });
     }
-}
+    }

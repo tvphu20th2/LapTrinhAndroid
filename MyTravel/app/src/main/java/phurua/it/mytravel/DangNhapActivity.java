@@ -7,10 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.material.button.MaterialButton;
 
 public class DangNhapActivity extends AppCompatActivity {
 
@@ -23,9 +20,7 @@ public class DangNhapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_nhap);
 
-
-
-         username = findViewById(R.id.editUser_dangnhap);
+        username = findViewById(R.id.editUser_dangnhap);
         password = findViewById(R.id.editPass_dangnhap);
         dangnhap = findViewById(R.id.buttonDangNhap);
         dangky = findViewById(R.id.buttonDangKy_dangnhap);
@@ -61,9 +56,9 @@ public class DangNhapActivity extends AppCompatActivity {
         dangky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),DangKyActivity.class);
+                Intent intent = new Intent(DangNhapActivity.this,DangkyActivity.class);
                 startActivity(intent);
             }
         });
     }
-}
+    }

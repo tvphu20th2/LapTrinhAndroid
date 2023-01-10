@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class DataBaseHelper extends SQLiteOpenHelper {
 
 
-    public DataBaseHelper( Context context) {
+    public DataBaseHelper(Context context) {
         super(context, "login.db", null, 1);
     }
 
